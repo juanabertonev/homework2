@@ -25,7 +25,7 @@
 // c. Escriba el código que permita probar los puntos mencionados para CajaDeAhorro y CuentaCorriente.
 
 //constructor 
-cajadeahorro::cajadeahorro(std::string titular, double plata): titularcuenta(titular), balance(plata), tipodecuenta("caja de ahorro"), vecesmostrada(0) {}
+cajadeahorro::cajadeahorro(std::string titular, double plata): balance(plata), titularcuenta(titular),  tipodecuenta("caja de ahorro"), vecesmostrada(0) {}
 
 // depositar esta en el .h
 
@@ -50,7 +50,7 @@ void cajadeahorro::mostrarinfo(){
 }
 
 //constructor
-cuentacorriente::cuentacorriente(std::string titular, double plata, cajadeahorro* c): titularcuenta(titular), balance(plata), tipodecuenta("cuenta corriente"), caja(c) {}
+cuentacorriente::cuentacorriente(std::string titular, double plata, cajadeahorro* c): balance(plata), titularcuenta(titular),  tipodecuenta("cuenta corriente"), caja(c) {}
 
 // depositar etsa en el .h
 
